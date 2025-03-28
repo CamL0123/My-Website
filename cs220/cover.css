@@ -1,0 +1,113 @@
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #01010c;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  font-family:monospace,monospace;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+
+Header {
+  background-color: #01010c !important;
+}
+
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/*
+.w3-top{position:fixed;width:100%;z-index:1}.w3-top{top:0}
+.w3-row:after,.w3-row:before{float:left}
+.w3-padding{padding:0 8px}
+.w3-padding{padding:8px 16px!important}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.w3-col.s3{width:33.33333%}
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ccc;color:#000}
+.w3-button,.w3-bar-block .w3-button{width:100%;text-align:left;padding:8px 16px}
+.w3-button{white-space:normal}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-block{display:inline-block;width:100%}
+.w3-row:after{content:"";display:table;clear:both}
+*/
+
+
+
+.w3-top {
+  position: fixed; /* Keep navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it's above other elements */
+  background-color: black; /* Navbar background */
+  height: 54px; /* Fixed height */
+}
+
+.w3-row {
+  display: flex; /* Horizontal alignment */
+  justify-content: space-evenly; /* Even spacing between items */
+  align-items: center; /* Vertical centering */
+  height: 100%; /* Fill the navbar height */
+}
+
+.w3-col {
+  flex: 1; /* Ensure columns are of equal width */
+  text-align: center; /* Center the text within each button */
+}
+
+.w3-button {
+  color: white; /* White text for contrast */
+  font-size: 13px; /* Adjust font size */
+  text-decoration: none; /* Remove underline */
+  padding: 12px 16px; /* Add padding for clickability */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.w3-button:hover {
+  background-color: #555; /* Gray hover effect */
+}
+
+@media screen and (max-width: 768px) {
+  .w3-col {
+    flex: none; /* Adjust layout for smaller screens */
+    width: 33.33%; /* Equal distribution */
+  }
+}
