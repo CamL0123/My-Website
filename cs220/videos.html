@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAMS235 Video Projects</title>
+    <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .video-container video {
+            width: 100%;
+            max-height: 450px;
+        }
+        .w3-top {
+    font-family: "Inconsolata", sans-serif !important;
+}
+    </style>
+</head>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="About me.html" class="w3-button w3-block w3-black">ABOUT</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="works.html" class="w3-button w3-block w3-black">WORKS</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">CAMS235 Video Projects</h1>
+                    <p class="lead text-body-secondary">Two video projects created for CAMS235. Watch below!</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="video-container py-5">
+            <!-- Embed your video files -->
+            <video controls>
+                <source src="Project 1 final.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <video controls>
+                <source src="project 2 final.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </main>
+
+    <footer class="text-body-secondary py-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Cameron. All rights reserved.</p>
+            <p><a href="your-link-here" class="text-decoration-underline" target="_blank">View full videos: Click here</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
